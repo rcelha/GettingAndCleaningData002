@@ -45,7 +45,7 @@ read_dataset <- function (base_dir = "UCI HAR Dataset") {
 build_tidy_dataset <- function (original_dataset, dest_file) {
     new_data <- original_dataset[, lapply(.SD, mean), by=c("subject", "activity_id", "activity")]
 	write.table(new_data, dest_file)
-    new_dataset
+    new_data
 }
 
 merged_dataset <- read_dataset()
