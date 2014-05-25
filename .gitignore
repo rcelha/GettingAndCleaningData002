@@ -6,3 +6,10 @@
 
 # R data files from past sessions
 .Rdata
+
+#  The data set
+UCI HAR Dataset/
+
+# compiled MD's
+CodeBook.html
+README.html
